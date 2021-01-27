@@ -1,0 +1,41 @@
+[
+	{
+		"title":"한국 전력공사",
+		"desc":"<span>웹표준</span> 및 <span>IE8</span>까지 고려한 사이트입니다. 처음 만든 사이트이며 기본적이지만 기능에 충실하게 구현했습니다.",
+		"type":"HTML, CSS, Javascript (jquery)",
+		"imgUrl":"images/kepco.png",
+		"projectLink":"http://yhlee1227.dothome.co.kr/portfolio/kepco/main_page/main_page.html",
+		"alt":"kepco"
+	},
+	{
+		"title":"MBC",
+		"desc":"<span>flex</span>를 사용하여 유연한 반응형 웹을 만들었습니다. <span>swipe</span>기능을 사용하여 모바일에서도 보기 편하게 만들었습니다.",
+		"type":"HTML, CSS, Javascript (jquery)",
+		"imgUrl":"images/mbc.png",
+		"projectLink":"http://yhlee1227.dothome.co.kr/portfolio/responsive_mbc/index.html",
+		"alt":"mbc"	
+	},
+	{
+		"title":"아모레 퍼시픽",
+		"desc":"<span>Sass</span>를 사용하여 반응형으로 만들었습니다.",
+		"type":"HTML, CSS, Javascript (jquery), Api",
+		"imgUrl":"images/amorepacific.png",
+		"projectLink":"http://yhlee1227.dothome.co.kr/portfolio/amore_pacific_sass/index.html",
+		"alt":"amore_pacific"
+	},
+	{
+		"title":"영풍문고",
+		"desc":"<span>flex</span>기능을 사용하여 영풍문고를 <span>모바일앱</span>으로 <span>리디자인</span>하여 구성하였습니다.",
+		"type":"HTML, CSS, Javascript (jquery)",
+		"imgUrl":"images/yp_moongo.png",
+		"projectLink":"http://yhlee1227.dothome.co.kr/portfolio/yp_moongo/index.html",
+		"alt":"영풍문고"
+	},
+	{
+		"title":"작업중",
+		"desc":"",
+		"type":"",
+		"imgUrl":"",
+		"projectLink":"https://www.figma.com/file/CJEroXKQP351xMVyPnthZ2/responsive_cat?node-id=0%3A1"	
+	}
+]

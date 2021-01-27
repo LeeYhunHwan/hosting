@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* 공통속성 */
+.container{width: 80%; margin: 0 auto}
+a:hover{text-decoration: none}
+h2{color: #437ef6; font-size: 28px; margin-bottom: 15px}
+
+/* #header */
+#header{width: 100%; position: fixed; height: 6.5vh; background: transparent; z-index: 3}
+#header .header_wrap{width: 80%; height: 100%; display: flex; justify-content: space-between; margin: 0 auto; align-items: center}
+#header .header_wrap #nav{width: 30%; position: relative}
+#header .header_wrap #nav ul{display: flex; justify-content: space-between; width: 100%; position: absolute; top: 50%; transform: translateY(-50%)}
+#header .header_wrap #nav ul li a{color: #fff; font-size: 23px}
+#header .header_wrap #nav ul li a:hover{color: #ffe100; border-bottom: 2px solid #ffe100}
+/* darkmode */
+/* #header .header_wrap .dark_mode{display: flex; justify-content: space-between; width: 15%; font-size: 18px; align-items: center}
+#header .header_wrap .dark_mode p{color: #fff}
+#header .header_wrap .dark_mode span{display: block}
+#header .header_wrap .dark_mode>span a{display: block}
+#header .header_wrap .dark_mode>span .btn_wrap{width: 52px; height: 26px; background: #b4b4b4; border-radius: 50px; position: relative}
+#header .header_wrap .dark_mode>span .btn_wrap .btn{background: #000000; width: 26px; height: 26px; border-radius: 50%; position: absolute; top: 0; left: 0; transition: all .3s} */
+
+/* mobile_nav */
+#header .header_wrap #mobile_nav{display: none}
+#header .header_wrap #mobile_nav .menu_wrap{position: relative}
+#header .header_wrap #mobile_nav .menu_wrap .menu_btn{width: 25px; height: 25px; display: block; position: relative; cursor: pointer; overflow: hidden}
+#header .header_wrap #mobile_nav .menu_wrap .menu_btn i{position: absolute; top: 0; left: 0; width: 25px; height: 2px; background: #fff; transition: all .3s}
+#header .header_wrap #mobile_nav .menu_wrap .menu_btn i:nth-child(2){top: 11.5px}
+#header .header_wrap #mobile_nav .menu_wrap .menu_btn i:nth-child(3){top:23px}
+#header .header_wrap #mobile_nav .menu_wrap .mobile_menu{position: absolute; top: 35px; width: fit-content; height: 0; overflow: hidden; opacity: .8}
+#header .header_wrap #mobile_nav .menu_wrap .mobile_menu ul li{background: #000; border-bottom: 1px solid #fff; white-space: nowrap; padding: 5px}
+#header .header_wrap #mobile_nav .menu_wrap .mobile_menu ul li:last-child{border: none}
+#header .header_wrap #mobile_nav .menu_wrap .mobile_menu ul li a{color: #fff; text-shadow: 1px 1px 1px #000, -1px -1px 1px #000}
+#header .header_wrap #mobile_nav .menu_wrap .mobile_menu ul li a:hover{color: #ffe100}
+
+/* main */
+#main{position: relative; background: url(../images/main_bg.png) no-repeat 0 0/cover; width:  100%; height: 100vh; z-index: 1}
+#main .main_intro{width: 80%; height: 60%; position: relative; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center; overflow: hidden}
+#main .main_intro .border{background: #fff; position: absolute; transition: all .5s}
+#main .main_intro .border1{width: 100%; height: 2px; top: 0; left: -100%}
+#main .main_intro .border2{width: 2px; height: 100%; top: -100%; right: 0}
+#main .main_intro .border3{width: 100%; height: 2px; bottom: 0; right: -100%}
+#main .main_intro .border4{width: 2px; height: 100%; bottom: -100%; left: 0}
+#main .main_intro .main_text_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 80%}
+#main .main_intro .main_text_wrap .mobile_intro{display: none}
+#main .main_intro .main_text_wrap h1{color: #fff; font-weight: 500; font-size: 32px; margin-bottom: 20px}
+#main .main_intro .main_text_wrap h1 span{color: #ffe100; font-weight: bold; font-size: 36px}
+#main .main_intro .main_text_wrap h2{color: #fff; font-weight: 500}
+
+/* aboutMe */
+#aboutMe{width: 100%; margin-top: 20px}
+#aboutMe .introduce{display: flex; width: 100%;justify-content: space-between}
+#aboutMe .introduce img{min-width: 261px; width: 300px; height: 394px}
+#aboutMe .introduce ul{width: inherit}
+#aboutMe .introduce ul li{font-size: 14px; line-height: 28px; width: fit-content; margin-left: 50px; letter-spacing: 0; display: flex}
+#aboutMe .introduce ul li .name{display: inline-block;margin-right: 10px; font-weight: bold; font-size: 16px; height: 100%}
+#aboutMe .introduce ul li .text{font-weight: normal; font-size: 14px; display:inline-block}
+
+/* skills */
+#skills{width: 100%; position: relative; height: 85vh; padding-top: 20px; padding-bottom: 60px; margin-top: 20px; margin-bottom: 15px}
+#skills .container_bg1{position: absolute; top: 0; left: 0; width: 50%; height: 100%;background: #e8e8e8; z-index: -1}
+#skills .container_bg2{position: absolute; top: 0; right: 0; width: 50%; height: 100%;background: #dfcbc6; z-index: -1}
+#skills h2{text-align: center}
+#skills h2 span{border: 3px solid #fff; padding: 3px 35px}
+#skills .skill_wrap{display: flex; justify-content: space-between; width: 100%; height: 85vh; flex-wrap: wrap}
+#skills .skill_wrap>div{width: 30%; background: #fff; padding: 18px; box-sizing: border-box; position: relative; height: 97%}
+#skills>div .skills{display: flex; justify-content: space-between}
+#skills>div .skills span{display: inline-block; width: 27%; display: flex}
+#skills>div .skills span img{width: 100%; height: 100%; display: block}
+#skills>div .skill_detail h3{border-bottom: 2.5px solid #000; margin-top: 10px}
+#skills>div .skill_detail p{font-size: 14px; line-height: 1.9}
+#skills>div .skill_detail p span{color: #b40000}
+#skills>div .skill_graph{position: absolute; top: 80%; left: 50%; transform: translateX(-50%); width: 80%}
+#skills>div .skill_graph .graph{margin-bottom: 5px; height: 25px; box-sizing: border-box; background: #6d6d6d; position: relative; overflow: hidden}
+#skills>div .skill_graph .graph p{font-size: 14px; color: #fff; line-height: 25px; margin-left: 5px; position: relative; z-index: 2}
+#skills>div .skill_graph .graph p span{float: right; margin-right: 5px; font-size: 12px}
+#skills>div .skill_graph .graph div{height: 100%; background: #85169e; position: absolute; top: 0; left: -100%; transition: all 2s; z-index: 1}
+#skills .mark_up .skill_graph .graph_01{width: 90%}
+#skills .mark_up .skill_graph .graph_02{width: 80%}
+#skills .mark_up .skill_graph .graph_03{width: 70%}
+#skills .mark_up .skill_graph .graph_04{width: 70%}
+#skills .design .skills span{margin-top: 10px}
+#skills .design .skill_graph .graph_01{width: 70%}
+#skills .design .skill_graph .graph_02{width: 60%}
+#skills .design .skill_graph .graph_03{width: 50%}
+#skills .etc .skills{width: 100%; display: block}
+#skills .etc .skills span{margin-top: 10px; width: 18%; float: left; margin-left: 15px}
+#skills .etc .skills span.cf2{clear: both}
+#skills .etc .skills span:first-child,#skills .etc .skills span:nth-child(5){margin-left: 0}
+#skills .etc .skills span img{width: 100%}
+#skills .etc .skill_detail{margin-top: 35px}
+#skills .etc .skill_detail p{line-height: 2}
+
+/* portfolio */
+#portfolio{position: relative; width: 100%; margin-top: 20px; margin-bottom: 20px}
+#portfolio .port_wrap{display: flex; flex-wrap: wrap;}
+#portfolio .port_wrap .portfolio_box{width: 30%; height: 400px; overflow: hidden; margin-bottom: 30px; border-radius: 15px; box-shadow: 5px 5px 3px #000; margin-left: 5%}
+#portfolio .port_wrap .portfolio_box:nth-child(1){background: #02234c; margin-left: 0}
+#portfolio .port_wrap .portfolio_box:nth-child(2){background: #f5595a}
+#portfolio .port_wrap .portfolio_box:nth-child(4){background: #6bad25}
+#portfolio .port_wrap .portfolio_box:nth-child(3n+1){background: #02234c; margin-left: 0}
+#portfolio .port_wrap .portfolio_box a{display: block; width: 100%; height: 100%; position: relative}
+#portfolio .port_wrap .portfolio_box a .frame_01{width: 80%; height: 80%; margin: 10% auto; background: url(../images/desktop_mockup.png) no-repeat center /100% 100%;  display: block; position: relative}
+#portfolio .port_wrap .portfolio_box a .frame_01 .f_box{width: 93%; height: 65%; top: 4.95%; position: absolute; left: 50%; transform: translate(-50%); overflow: hidden}
+#portfolio .port_wrap .portfolio_box a .frame_01 .f_box img{width: 100%; position: absolute; top: 0; left: 0; transition: all 1.4s linear}
+#portfolio .port_wrap .portfolio_box a .text{position: absolute; top: 60%; background: rgba(0, 0, 0, .5); width: 100%; height: 100%; padding: 8px 14px; box-sizing: border-box; transition: top .3s}
+#portfolio .port_wrap .portfolio_box a .text p{color: #fff}
+#portfolio .port_wrap .portfolio_box a .text:hover{top: -10%; padding: 20px 18px;background: rgba(0, 0, 0, 1)}
+#portfolio .port_wrap .portfolio_box a .text .title{font-size: 18px; margin-bottom: 3.4%}
+#portfolio .port_wrap .portfolio_box a .text:hover .title{margin-bottom: 11%}
+#portfolio .port_wrap .portfolio_box a .text .subtitle{font-size: 15px; margin-bottom:3%}
+#portfolio .port_wrap .portfolio_box a .text:hover .subtitle{margin-bottom: 9%}
+#portfolio .port_wrap .portfolio_box a .text .content{line-height: 1.7; letter-spacing: 0px; display: none; font-size: 13px}
+#portfolio .port_wrap .portfolio_box a .text:hover .content{display: block}
+#portfolio .port_wrap .portfolio_box a .text .content span{color: red}
+#portfolio button.more{margin: 0 auto; display: block; border: 1px solid #000; padding: 10px 25px; border-radius: 50px; transition: all .3s;}
+#portfolio button.more:hover{color: #fff; background: #000}
+
+/* amore effect */
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .frame_01{width: 100%; height: 100%; margin: 0; background: none}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .frame_01 .f_box{width: 100%; height: 100%; position: absolute; top: 0; left: 50%; transform: translate(-50%); overflow: hidden}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .frame_01 .f_box img{width: 100%; position: absolute; top: 0; left: 0; transition: all 1.4s linear}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .effect img{transform: translateX(-50%); left: 50%; transition: all .5s}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .top img{display: block; width: 80%; position: absolute; bottom: 50%}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .middle img{display: block; width: 80%; position: absolute; top: 50%; transform: translate(-50%, -50%); opacity: 0}
+#portfolio .port_wrap .portfolio_box:nth-child(3):hover a .top img{bottom: 100%}
+#portfolio .port_wrap .portfolio_box:nth-child(3):hover a .middle img{opacity: .7}
+#portfolio .port_wrap .portfolio_box:nth-child(3):hover a .bottom img{top: 100%}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .bottom img{display: block; width: 80%; position: absolute; top: 50%}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .text{top: 70%}
+#portfolio .port_wrap .portfolio_box:nth-child(3) a .text:hover{top: 0}
+
+/* 고양이 */
+#portfolio .port_wrap .portfolio_box:nth-child(4){}
+
+/* contact */
+#contact{width: 100%; height: 160px;position: relative; background: linear-gradient(269deg, #fb8700, #e5ea1a, #6aca0d, #427b0b, #0b7b63, #1b1fd7, #7b1bd7, #d71b96, #ec154c); background-size: 1800% 1800%; animation: gradient 20s ease infinite}
+@keyframes gradient{
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:38% 0%}
+    50%{background-position:63% 100%}
+    100%{background-position:38% 0%}
+}
+#contact .f_top{width: 100%; height:80%}
+#contact .f_top .f_box{width: 90%; height: 70%; position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%);  box-sizing: border-box; padding: 8px 80px; text-align: center}
+#contact .f_top .f_box h2{margin-bottom: 9px; line-height: 1.3}
+#contact .f_top .f_box .f_b_body .contact_me div{display: block; margin-bottom: 5px}
+#contact .f_top .f_box .f_b_body .contact_me div i{color: #85169e; display: inline-block}
+#contact .f_top .f_box .f_b_body .contact_me div p{display: inline-block; margin-left: 20px; font-size: 18px; color: #fff; font-weight: bold}
+#contact .f_body{width: 90%; position: relative; bottom: 0; left: 50%; transform: translate(-50%,-50%); white-space: nowrap}
+#contact .f_body .copy{color: #fff; font-size: 12px; line-height: 10px;display: inline-block; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%)}
+#contact .f_body .ws3{position: absolute; bottom: -32px; right: 0}
